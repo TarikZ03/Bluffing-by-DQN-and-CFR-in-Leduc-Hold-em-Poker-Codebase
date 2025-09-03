@@ -1,1 +1,1 @@
-Users need to update all file paths to match to their local setups.
+Users need to update all file paths to match their local setups in order to run the code succesfully.
