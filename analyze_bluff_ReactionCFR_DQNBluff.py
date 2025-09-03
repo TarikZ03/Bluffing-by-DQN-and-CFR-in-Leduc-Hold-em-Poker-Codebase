@@ -3,6 +3,9 @@ import wandb
 import matplotlib.pyplot as plt
 from collections import Counter
 import os
+SEED = 42
+np.random.seed(SEED)
+random.seed(SEED)
 
 # === Configs ===
 LOG_PATH = r'C:\Users\zaket\PycharmProjects\Thesis\BNAIC_paper_results\simultaneous_Evaluation_100K\evaluation_game_logs_all_100K.jsonl'
@@ -425,3 +428,4 @@ print("ANALYSIS COMPLETE WITH CLEAR ATTEMPT/SUCCESS SEPARATION")
 print("=" * 80)
 print(f"Key Insight: Out of {total_bluff_attempts} bluff attempts, {total_bluff_successes} succeeded")
 print(f"This gives a {bluff_success_rate:.1%} success rate for DQN's weak hand raises against CFR")
+
