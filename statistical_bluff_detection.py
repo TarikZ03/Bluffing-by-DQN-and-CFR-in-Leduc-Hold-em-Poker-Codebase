@@ -5,7 +5,9 @@ import pickle
 import matplotlib.pyplot as plt
 import wandb
 import os
-
+SEED = 42
+np.random.seed(SEED)
+random.seed(SEED)
 
 class StatisticalBluffDetector52:
     """
@@ -728,3 +730,4 @@ if __name__ == "__main__":
     print("=" * 80)
     print(f"DQN Statistical Bluff Success Rate: {dqn_results['statistical_bluff_success_rate']:.1%}")
     print(f"CFR Statistical Bluff Success Rate: {cfr_results['statistical_bluff_success_rate']:.1%}")
+
